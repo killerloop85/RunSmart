@@ -38,6 +38,15 @@
 			}
 		}
 	}
+	.feed {
+		&__text {
+			padding-right: 10px;
+		}
+		&__img {
+		height: 125px;
+		width: 125px;
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -83,6 +92,11 @@
 			font-size: 16px;
 			font-weight: 400;
 		}
+		&_mini {
+			width: 131px;
+			height: 40px;
+			font-size: 14px;
+		}
 	}
 	.advantages {
 		&__item{
@@ -101,6 +115,20 @@
 	.consultation {
 		&__descr {
 			font-size: 14px;
+		}
+	}
+	.catalog {
+		&__tab {
+			width: 165px;
+			height: 38px;
+			font-size: 14px;
+			line-height: 38px;
+		}
+		&__content {
+			justify-content: center;
+		}
+		&-item {
+			width: 310px;
 		}
 	}
 }
@@ -136,6 +164,11 @@
 			height: 50px;
 			font-size: 14px;
 			font-weight: 400;
+		}
+		&_mini {
+			width: 131px;
+			height: 40px;
+			font-size: 14px;
 		}
 	}
 	.promo {
@@ -211,6 +244,52 @@
 		input {
 			height: 45px;
 			font-size: 12px;
+		}
+	}
+	.catalog {
+		padding-bottom: 50px;
+		&__tabs {
+			margin-top: 40px;
+		}
+		&__tab {
+			width: 85px;
+			height: 30px;
+			font-size: 9px;
+			line-height: 27px;
+		}
+		&__content {
+			margin-top: 30px;
+		}
+	}
+	.feed {
+		padding-bottom: 50px;
+		&__item {
+			margin-top: 50px;
+			flex-direction: column;
+			&:nth-child(2){
+				margin-top: 30px;
+			}
+		}
+		&__img {
+			width: 90px;
+			height: 90px;
+			display: block;
+			margin: 0 auto;
+		}
+		&__text {
+			padding: 0;
+			margin-top: 10px;
+			margin-left: 0;
+			text-align: center;
+		}
+		&__subtitle {
+			font-size: 16px;
+		}
+		&__count {
+			font-size: 12px;
+		}
+		&__descr  {
+			font-size: 14px;
 		}
 	}
 }
